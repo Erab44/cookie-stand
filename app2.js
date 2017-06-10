@@ -30,6 +30,7 @@ var alki = {
   avgCookiePerSale: 4.6
 };
 
+/*
 var storesMinMax = [
   {fpMin: 23, fpMax: 65},
   {airMin: 3, airMax: 24},
@@ -45,9 +46,12 @@ var avgCookiePerSaleStore = [
   {capHill: 2.3},
   {alki: 4.6}
 ];
-
-var randomCustPerHour = Math.random() * (maxCust - minCust) + minCust;
-
-function custHour(minCust, maxCust) {
-  return Math.random() * (maxCust - minCust) + minCust;
+*/
+var cookiesPerHour = function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+cookiesPerHour(alki.minCust, alki.maxCust);
+console.log();
