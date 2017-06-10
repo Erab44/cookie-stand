@@ -3,11 +3,14 @@ body {
 }
 
 h1 {
+  font-family: 'Permanent Marker', cursive;
   position: relative;
   top: 50px;
+  text-align: center;
 }
 
 p {
+  font-family: Georgia;
   color: black;
   position: relative;
   top: 100px;
