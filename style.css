@@ -1,5 +1,6 @@
 body {
   background-color: #A59C76;
+  /*background-image: url(/Users/jeffmccord/codefellows/201/cookie-stand/pizza-2344399_1920.jpg);*/
 }
 
 h1 {
@@ -14,8 +15,8 @@ p {
   color: black;
   position: relative;
   top: 100px;
+  text-align: center;
 }
-
 
 
 .fixed-nav-bar {
@@ -36,5 +37,5 @@ a:link {
 }
 
 a:visited {
-  color:
+  color: #E5E7BF;
 }
