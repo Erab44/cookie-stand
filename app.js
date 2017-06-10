@@ -51,6 +51,7 @@ var totalCookies = 0;
 function custHour(min, max) {
   return Math.random() * (max - min) + min;
 }
+var custHour = function
 
 function cookiesPerHour() {
   totalCookies += cookiesPerHour;
