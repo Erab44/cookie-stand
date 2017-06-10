@@ -29,3 +29,17 @@ var alki = {
   maxCust: 16,
   avgCookiePerSale: 4.6
 };
+
+var totalCookies = 0;
+
+function custHour(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function cookiesPerHour() {
+  totalCookies += cookiesPerHour;
+  return avgCookiePerSale * custHour;
+}
+
+custHour(23, 65);
+cookiesPerHour();
