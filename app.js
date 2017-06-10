@@ -30,6 +30,22 @@ var alki = {
   avgCookiePerSale: 4.6
 };
 
+var storesMinMax = [
+  {fpMin: 23, fpMax: 65},
+  {airMin: 3, airMax: 24},
+  {scMin: 11, scMax: 38},
+  {capMin: 20, capMax: 38},
+  {alkiMin: 2, alkiMax: 16}
+];
+
+var avgCookiePerSaleStore = [
+  {firstAndPike: 6.3},
+  {seaTacAir: 1.2},
+  {seattleCenter: 3.7},
+  {capHill: 2.3},
+  {alki: 4.6}
+];
+
 var totalCookies = 0;
 
 function custHour(min, max) {
@@ -43,3 +59,4 @@ function cookiesPerHour() {
 
 custHour(23, 65);
 cookiesPerHour();
+text(totalCookies);
