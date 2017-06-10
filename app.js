@@ -33,19 +33,6 @@ var salesWork = document.getElementById('sales-worksheet')
 //   salesPerStore(allStores[i]);
 // }
 
-function Location(name, minCust, maxCust, avgCookiePerSale, totalCookies, hoursOpen, averageCustHour){
-  this.name = name;
-  this.minCust = minCust;
-  this.maxCust = maxCust;
-  this.avgCookiePerSale = avgCookiePerSale;
-  this.averageCustHour = 0;
-  this.totalCookies = totalCookies;
-  this.hoursOpen = hoursOpen['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
-}
-var hoursOpen = ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
-
-var firstAndPike = new Location('First and Pike', 23, 65, 6.3, 0, hoursOpen);
-console.log(Location);
 
 var firstAndPike = {
   minCust: 23,
@@ -60,6 +47,7 @@ var seaTacAir = {
   averageCustHour: 0,
   cookiesBoughtHour: [],
   totalCookies: 0,
+  hoursOpen: ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM']
 };
 
 var seattleCenter = {
