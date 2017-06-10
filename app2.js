@@ -30,6 +30,8 @@ var alki = {
   avgCookiePerSale: 4.6
 };
 
+for (var i = 0; i < store.hoursOpen.length; i++){
+
 /*
 var storesMinMax = [
   {fpMin: 23, fpMax: 65},

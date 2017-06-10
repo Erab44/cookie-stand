@@ -1,10 +1,46 @@
 'use strict'
-function storeNumber(min, max) {
+function storeSales(min, max) {
   return Math.floor(Math.random() * ((max +1) - min) + min)
 }
-function cookiesPerHour() {
-  for(var i = 0; i < store.hoursOpen.length; i++)
+// function cookiesPerHour() {
+//   for(var i = 0; i < store.hoursOpen.length; i++){
+//     store.averageCustHour = storeNumber(store.minCust, store.maxCust);
+//
+//   }
+//}
+function salesPerStore(store){
+  var sectionEl = document.createElement('section');
+  //step 1
+  var headerEl = document.createElement('h4');
+  var listEl = document.createElement('ul');
+  var listItemEl = document.createElement('li');
+  //step 2
+  sectionEl.appendChild(headerEl);
+  headerEl.appendChild(listEl);
+  listEl.appendChild(listItemEl);
+
+
+
+
+
+
+
+
+
+
+  .appendChild(salesPerStore);
 }
+
+// var tableEl = document.getElementById('generated-table');
+//
+// var tableBodyEl = document.createElement('tbody');
+// tableEl.appendChild(tableBodyEl);
+
+var allStores = [firstAndPike, seaTacAir, seattleCenter, capHill, alki];
+
+var salesWork = document.getElementById('sales-worksheet')
+
+
 var firstAndPike = {
   minCust: 23,
   maxCust: 65,
