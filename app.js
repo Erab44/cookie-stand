@@ -1,5 +1,8 @@
 'use strict'
-
+function storeNumber(min, max) {
+  return Math.floor(Math.random() * ((max +1) - min) + min)
+}
+function cookiesPerHour() {}
 var firstAndPike = {
   minCust: 23,
   maxCust: 65,
@@ -9,7 +12,11 @@ var firstAndPike = {
 var seaTacAir = {
   minCust: 3,
   maxCust: 24,
-  avgCookiePerSale: 1.2
+  avgCookiePerSale: 1.2,
+  averageCustHour: 0,
+  cookiesBoughtHour: [],
+  totalCookies: 0,
+  hoursOpen: ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM']
 };
 
 var seattleCenter = {
@@ -45,19 +52,3 @@ var avgCookiePerSaleStore = [
   {capHill: 2.3},
   {alki: 4.6}
 ];
-
-var totalCookies = 0;
-
-function custHour(min, max) {
-  return Math.random() * (max - min) + min;
-}
-var custHour = function
-
-function cookiesPerHour() {
-  totalCookies += cookiesPerHour;
-  return avgCookiePerSale * custHour;
-}
-
-custHour(23, 65);
-cookiesPerHour();
-text(totalCookies);
