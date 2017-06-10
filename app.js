@@ -2,7 +2,9 @@
 function storeNumber(min, max) {
   return Math.floor(Math.random() * ((max +1) - min) + min)
 }
-function cookiesPerHour() {}
+function cookiesPerHour() {
+  for(var i = 0; i < store.hoursOpen.length; i++)
+}
 var firstAndPike = {
   minCust: 23,
   maxCust: 65,
