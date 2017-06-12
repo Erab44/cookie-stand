@@ -42,10 +42,11 @@ function Store(name, minCust, maxCust, avgCookiePerSale){
   this.hoursOpen = ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
 }
 
-var firstAndPike = new Store('First and Pike', 23, 65, 6.3)
-  minCust: 23,
-  maxCust: 65,
-  avgCookiePerSale: 6.3
+var firstAndPike = new Store('First and Pike', 23, 65, 6.3);
+var seaTacAir = new Store();
+var seattleCenter = new Store();
+var capHill = new Store();
+var alki = new Store();
 
 
 var seaTacAir = {
