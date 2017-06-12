@@ -32,7 +32,7 @@ var salesWork = document.getElementById('sales-worksheet')
 // for (var i = 0; i < allStores.length; i++) {
 //   salesPerStore(allStores[i]);
 // }
-function Store(name, minCust, maxCust, averageCustHour){
+function Store(name, minCust, maxCust, avgCookiePerSale){
   this.name = name;
   this.minCust = minCust;
   this.maxCust = maxCust;
@@ -42,11 +42,11 @@ function Store(name, minCust, maxCust, averageCustHour){
   this.hoursOpen = ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
 }
 
-var firstAndPike = {
+var firstAndPike = new Store('First and Pike', 23, 65, 6.3)
   minCust: 23,
   maxCust: 65,
   avgCookiePerSale: 6.3
-};
+
 
 var seaTacAir = {
   minCust: 3,
