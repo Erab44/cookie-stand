@@ -26,6 +26,8 @@ function salesPerStore(store){
 // tableEl.appendChild(tableBodyEl);
 
 // var allStores = [firstAndPike, seaTacAir, seattleCenter, capHill, alki];
+var hoursOpen = ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
+
 
 var salesWork = document.getElementById('sales-worksheet')
 
@@ -39,14 +41,13 @@ function Store(name, minCust, maxCust, avgCookiePerSale){
   this.avgCookiePerSale = avgCookiePerSale;
   this.averageCustHour = 0;
   this.totalCookies = totalCookies;
-  this.hoursOpen = ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
 }
 
 var firstAndPike = new Store('First and Pike', 23, 65, 6.3);
-var seaTacAir = new Store();
-var seattleCenter = new Store();
-var capHill = new Store();
-var alki = new Store();
+var seaTacAir = new Store('SeaTac Air', 3, 24, 1.2);
+var seattleCenter = new Store('Seattle Center', 11, 38, 3.7);
+var capHill = new Store('Capital Hill', 20, 38, 2.3);
+var alki = new Store('Alki', 2, 16, 4.6);
 
 
 var seaTacAir = {
@@ -59,39 +60,39 @@ var seaTacAir = {
   hoursOpen: ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM']
 };
 
-var seattleCenter = {
-  minCust: 11,
-  maxCust: 38,
-  avgCookiePerSale: 3.7
-};
-
-var capHill = {
-  minCust: 20,
-  maxCust: 38,
-  avgCookiePerSale: 2.3
-};
-
-var alki = {
-  minCust: 2,
-  maxCust: 16,
-  avgCookiePerSale: 4.6
-};
-
-var storesMinMax = [
-  {fpMin: 23, fpMax: 65},
-  {airMin: 3, airMax: 24},
-  {scMin: 11, scMax: 38},
-  {capMin: 20, capMax: 38},
-  {alkiMin: 2, alkiMax: 16}
-];
-
-var avgCookiePerSaleStore = [
-  {firstAndPike: 6.3},
-  {seaTacAir: 1.2},
-  {seattleCenter: 3.7},
-  {capHill: 2.3},
-  {alki: 4.6}
-];
+// var seattleCenter = {
+//   minCust: 11,
+//   maxCust: 38,
+//   avgCookiePerSale: 3.7
+// };
+//
+// var capHill = {
+//   minCust: 20,
+//   maxCust: 38,
+//   avgCookiePerSale: 2.3
+// };
+//
+// var alki = {
+//   minCust: 2,
+//   maxCust: 16,
+//   avgCookiePerSale: 4.6
+// };
+//
+// var storesMinMax = [
+//   {fpMin: 23, fpMax: 65},
+//   {airMin: 3, airMax: 24},
+//   {scMin: 11, scMax: 38},
+//   {capMin: 20, capMax: 38},
+//   {alkiMin: 2, alkiMax: 16}
+// ];
+//
+// var avgCookiePerSaleStore = [
+//   {firstAndPike: 6.3},
+//   {seaTacAir: 1.2},
+//   {seattleCenter: 3.7},
+//   {capHill: 2.3},
+//   {alki: 4.6}
+// ];
 
 
 var allStores = [firstAndPike, seaTacAir, seattleCenter, capHill, alki];
