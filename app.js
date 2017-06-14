@@ -26,7 +26,7 @@ function salesPerStore(store){
 // tableEl.appendChild(tableBodyEl);
 
 // var allStores = [firstAndPike, seaTacAir, seattleCenter, capHill, alki];
-var hoursOpen = ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
+hoursOpen = ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
 
 
 var salesWork = document.getElementById('sales-worksheet')
@@ -70,6 +70,10 @@ Store.prototype.makeRow = function(){
   var minCustEl = document.createElement('td');
   minCustEl.textContent = this.minCust;
   newRowEl.appendChild(minCustEl);
+
+  var maxCustEl = document.createElement('td');
+  maxCustEl.textContent = this.maxCust;
+  newRowEl.appendChild(maxCustEl);
 }
 
 
