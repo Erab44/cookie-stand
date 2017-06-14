@@ -30,7 +30,7 @@ var hoursOpen = ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 P
 
 
 var salesWork = document.getElementById('sales-worksheet')
-
+// var totalCookies =
 // for (var i = 0; i < allStores.length; i++) {
 //   salesPerStore(allStores[i]);
 // }
@@ -40,7 +40,7 @@ function Store(name, minCust, maxCust, avgCookiePerSale){
   this.maxCust = maxCust;
   this.avgCookiePerSale = avgCookiePerSale;
   this.averageCustHour = 0;
-  this.totalCookies = totalCookies;
+  // this.totalCookies = totalCookies;
 }
 
 var firstAndPike = new Store('First and Pike', 23, 65, 6.3);
@@ -50,16 +50,33 @@ var capHill = new Store('Capital Hill', 20, 38, 2.3);
 var alki = new Store('Alki', 2, 16, 4.6);
 
 
-var seaTacAir = {
-  minCust: 3,
-  maxCust: 24,
-  avgCookiePerSale: 1.2,
-  averageCustHour: 0,
-  cookiesBoughtHour: [],
-  totalCookies: 0,
-  hoursOpen: ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM']
-};
+// var seaTacAir = {
+//   minCust: 3,
+//   maxCust: 24,
+//   avgCookiePerSale: 1.2,
+//   averageCustHour: 0,
+//   cookiesBoughtHour: [],
+//   totalCookies: 0,
+//   hoursOpen: ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM']
+// };
 
+Store.prototype.makeRow = function(){
+  var newRowEl = document.createElement('tr');
+
+  var nameDataEl = document.createElement('td');
+  nameDataEl.textContent = this.name;
+  newRowEl.appendChild(nameDataEl);
+
+  var minCustEl = document.createElement('td');
+  minCustEl.textContent = this.minCust;
+  newRowEl.appendChild(minCustEl);
+}
+
+
+
+var tableEl = document.getElementById('table');
+var tableBodyEl = document.createElement('tbody');
+tableEl.appendChild(tableBodyEl);
 // var seattleCenter = {
 //   minCust: 11,
 //   maxCust: 38,
