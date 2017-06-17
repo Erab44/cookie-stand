@@ -63,6 +63,8 @@ Store.prototype.randnum = function() {
 };
 
 Store.prototype.makeRow = function(){
+  var tableEl = document.getElementById('table');
+
   var newRowEl = document.createElement('tr');
 
   var nameDataEl = document.createElement('td');
@@ -76,11 +78,11 @@ Store.prototype.makeRow = function(){
   var maxCustEl = document.createElement('td');
   maxCustEl.textContent = this.maxCust;
   newRowEl.appendChild(maxCustEl);
+
+  tableEl.appendChild(newRowEl);
 };
 
-var tableEl = document.getElementById('table');
-var tableBodyEl = document.createElement('tbody');
-tableEl.appendChild(tableBodyEl);
+
 // var seattleCenter = {
 //   minCust: 11,
 //   maxCust: 38,
@@ -127,3 +129,6 @@ for (var s = 0; s < allStores.length; s++) {
   }
   currentStore.makeRow();
 }
+
+// var newResultsArray = Store[this.results];
+// var newResults = this.results;
