@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 function storeSales(min, max) {
   return Math.floor(Math.random() * ((max +1) - min) + min)
 }
@@ -26,7 +26,7 @@ function salesPerStore(store){
 // tableEl.appendChild(tableBodyEl);
 
 // var allStores = [firstAndPike, seaTacAir, seattleCenter, capHill, alki];
-hoursOpen = ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
+var hoursOpen = ['6 AM', '7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM', '6 PM', '7 PM', '8 PM'];
 
 
 var salesWork = document.getElementById('sales-worksheet')
