@@ -71,57 +71,40 @@ Store.prototype.makeRow = function(){
   nameDataEl.textContent = this.name;
   newRowEl.appendChild(nameDataEl);
 
-  var minCustEl = document.createElement('td');
-  minCustEl.textContent = this.minCust;
-  newRowEl.appendChild(minCustEl);
+  // var minCustEl = document.createElement('td');
+  // // minCustEl.textContent = this.minCust;
+  // newRowEl.appendChild(minCustEl);
+  //
+  // var maxCustEl = document.createElement('td');
+  // // maxCustEl.textContent = this.maxCust;
+  // newRowEl.appendChild(maxCustEl);
 
-  var maxCustEl = document.createElement('td');
-  maxCustEl.textContent = this.maxCust;
-  newRowEl.appendChild(maxCustEl);
+  for (var i=0; i < this.results.length; i++) {
+    var insertEl = document.createElement('td');
+    insertEl.textContent = this.results[i];
+    newRowEl.appendChild(insertEl);
+  }
+  var tableBody = document.createElement('tbody');
+
+  var totalsEl = document.createElement('td');
+  totalsEl.textContent = this.totalSales;
+  newRowEl.appendChild(tableBody);
 
   tableEl.appendChild(newRowEl);
+
 };
 
 
-// var seattleCenter = {
-//   minCust: 11,
-//   maxCust: 38,
-//   avgCookiePerSale: 3.7
-// };
-//
-// var capHill = {
-//   minCust: 20,
-//   maxCust: 38,
-//   avgCookiePerSale: 2.3
-// };
-//
-// var alki = {
-//   minCust: 2,
-//   maxCust: 16,
-//   avgCookiePerSale: 4.6
-// };
-//
-// var storesMinMax = [
-//   {fpMin: 23, fpMax: 65},
-//   {airMin: 3, airMax: 24},
-//   {scMin: 11, scMax: 38},
-//   {capMin: 20, capMax: 38},
-//   {alkiMin: 2, alkiMax: 16}
-// ];
-//
-// var avgCookiePerSaleStore = [
-//   {firstAndPike: 6.3},
-//   {seaTacAir: 1.2},
-//   {seattleCenter: 3.7},
-//   {capHill: 2.3},
-//   {alki: 4.6}
-// ];
+
+
+
+
 
 var allStores = [firstAndPike, seaTacAir, seattleCenter, capHill, alki];
 
 for (var s = 0; s < allStores.length; s++) {
   var currentStore = allStores[s];
-  for (var i = 1; i < hoursOpen.length - 1; i++) {
+  for (var i = 1; i <=  hoursOpen.length; i++) {
     currentStore.hourlySales = Math.floor((currentStore.randnum() * currentStore.avgCookiePerSale));
     currentStore.totalSales += currentStore.hourlySales;
     var currentHour = hoursOpen[i];
