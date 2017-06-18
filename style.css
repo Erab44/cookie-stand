@@ -6,6 +6,15 @@ body {
     -webkit-filter: blur(10px);
     filter: blur(10px);
 }
+#sales {
+  border-collapse: collapse;
+  border: 1px solid #4F3C2B;
+}
+
+table td, th {
+  background-color: #DFDEB3;
+  border: 1px solid #4F3C2B;
+}
 
 h1 {
   font-family: 'Permanent Marker', cursive;

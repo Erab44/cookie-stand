@@ -84,11 +84,11 @@ Store.prototype.makeRow = function(){
     insertEl.textContent = this.results[i];
     newRowEl.appendChild(insertEl);
   }
-  var tableBody = document.createElement('tbody');
+
 
   var totalsEl = document.createElement('td');
   totalsEl.textContent = this.totalSales;
-  newRowEl.appendChild(tableBody);
+  newRowEl.appendChild(totalsEl);
 
   tableEl.appendChild(newRowEl);
 
