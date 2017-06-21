@@ -1,30 +1,53 @@
+
 body {
   background-color: #A59C76;
-  /*background-image: url(/Users/jeffmccord/codefellows/201/cookie-stand/pizza-2344399_1920.jpg);*/
 }
 .background {
     -webkit-filter: blur(10px);
     filter: blur(10px);
 }
+#sales {
+  border-collapse: collapse;
+  border: 1px solid #4F3C2B;
+}
+
+table td, th {
+  background-color: #DFDEB3;
+  border: 1px solid #4F3C2B;
+}
+
+.totals {
+  background-color: #403F33;
+  color: #DFDEB3;
+}
 
 h1 {
-  font-family: 'Permanent Marker', cursive;
-  position: relative;
-  top: 50px;
+  font-family: 'Permanent Marker', Cursive;
+  /*position: relative;*/
+  /*top: 50px;*/
   text-align: center;
+}
+
+#salmonPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
   font-family: Georgia;
   color: black;
-  position: relative;
-  top: 100px;
+  /*position: relative;
+  top: 100px;*/
   text-align: center;
 }
 
+#sales-worksheet {
+  display: block;
+}
 
 .fixed-nav-bar {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   z-index: 9999;
@@ -36,10 +59,46 @@ p {
 
 }
 
+a.b:link {
+  color: #4F3C2B;
+}
+
+a:active {
+  background-color: #D2A226;
+}
+
 a:link {
   color: #E5E7BF;
 }
 
 a:visited {
   color: #E5E7BF;
+}
+
+a:hover {
+  background-color: #A59C76;
+  color: white;
+}
+
+/*.b:link {
+  color: #4F3C2B;
+}*/
+
+div {
+  display: inline-block;
+}
+
+#where, #info {
+  margin: 20px;
+  padding: 20px;
+  border: solid #4F3C2B 2px;
+  background-color: #E5E7BF;
+  width: 450px;
+  height: 250px;
+  display: inline-block;
+  float: left;
+}
+
+#where {
+  margin-left: 150px;
 }
