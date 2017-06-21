@@ -43,8 +43,7 @@ p {
 }
 
 #sales-worksheet {
-  display: inline-block;
-  width: 200px;
+  display: block;
 }
 
 .fixed-nav-bar {
@@ -86,4 +85,5 @@ a:hover {
   padding: 20px;
   border: solid #4F3C2B 2px;
   background-color: #E5E7BF;
+  width: 200px;
 }
