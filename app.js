@@ -87,6 +87,7 @@ Store.prototype.makeRow = function(){
 
 
   var totalsEl = document.createElement('td');
+  totalsEl.setAttribute('class', 'totals');
   totalsEl.textContent = this.totalSales;
   newRowEl.appendChild(totalsEl);
 

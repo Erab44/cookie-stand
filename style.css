@@ -16,8 +16,13 @@ table td, th {
   border: 1px solid #4F3C2B;
 }
 
+.totals {
+  background-color: #403F33;
+  color: #DFDEB3;
+}
+
 h1 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', Cursive;
   position: relative;
   top: 50px;
   text-align: center;
@@ -31,6 +36,9 @@ p {
   text-align: center;
 }
 
+#sales-worksheet {
+  display: block;
+}
 
 .fixed-nav-bar {
   position: fixed;
@@ -45,10 +53,19 @@ p {
 
 }
 
+a:active {
+  background-color: #D2A226;
+}
+
 a:link {
   color: #E5E7BF;
 }
 
 a:visited {
   color: #E5E7BF;
+}
+
+a:hover {
+  background-color: #A59C76;
+  color: white;
 }
