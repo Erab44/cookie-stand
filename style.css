@@ -1,6 +1,6 @@
+
 body {
   background-color: #A59C76;
-  /*background-image: url(/Users/jeffmccord/codefellows/201/cookie-stand/pizza-2344399_1920.jpg);*/
 }
 .background {
     -webkit-filter: blur(10px);
@@ -23,25 +23,32 @@ table td, th {
 
 h1 {
   font-family: 'Permanent Marker', Cursive;
-  position: relative;
-  top: 50px;
+  /*position: relative;*/
+  /*top: 50px;*/
   text-align: center;
+}
+
+#salmonPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
   font-family: Georgia;
   color: black;
-  position: relative;
-  top: 100px;
+  /*position: relative;
+  top: 100px;*/
   text-align: center;
 }
 
 #sales-worksheet {
-  display: block;
+  display: inline-block;
+  width: 200px;
 }
 
 .fixed-nav-bar {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   z-index: 9999;
@@ -66,7 +73,17 @@ a:visited {
 }
 
 a:hover {
-  display: inline-block;
   background-color: #A59C76;
   color: white;
+}
+
+.b:link {
+  color: #4F3C2B;
+}
+
+#where {
+  margin: 5px;
+  padding: 20px;
+  border: solid #4F3C2B 2px;
+  background-color: #E5E7BF;
 }
