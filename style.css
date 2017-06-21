@@ -59,6 +59,10 @@ p {
 
 }
 
+.b:link {
+  color: #4F3C2B;
+}
+
 a:active {
   background-color: #D2A226;
 }
@@ -76,14 +80,25 @@ a:hover {
   color: white;
 }
 
-.b:link {
+/*.b:link {
   color: #4F3C2B;
+}*/
+
+div {
+  display: inline-block;
 }
 
-#where {
-  margin: 5px;
+#where, #info {
+  margin: 20px;
   padding: 20px;
   border: solid #4F3C2B 2px;
   background-color: #E5E7BF;
-  width: 200px;
+  width: 450px;
+  height: 250px;
+  display: inline-block;
+  float: left;
+}
+
+#where {
+  margin-left: 150px;
 }
