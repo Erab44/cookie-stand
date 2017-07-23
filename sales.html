@@ -6,11 +6,14 @@
 
   </head>
   <body>
-    <form>
+    <form id ="form">
       <fieldset>
-        <legend>Store Info:</legend>
-        Location: <input type="" />
-        
+        <legend>Add New Store:</legend>
+        Location: <input id = "storeName" type="text" name = "storeName"/>
+        Minimum Cust/Hour: <input id = "minCust" type = "number" name = "minCust" min = "0" value = "" required/>
+        Max Cust/Hour<input id ="maxCust" type="number" name="maxCust" value="" required/>
+        Average Cookies/Sale <input type="number" name="avgCookiePerSale" min="" value=""/>
+        <input type="submit" name="submit" value="Add new store"/>
       </fieldset>
     </form>
     <table>
